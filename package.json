@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
+    "capture-storybook": "storycap --serverCmd 'start-storybook -p 9001 --ci --quiet' http://localhost:9001",
     "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
@@ -43,6 +44,8 @@
     "@storybook/react": "^5.3.13",
     "reg-keygen-git-hash-plugin": "^0.8.5",
     "reg-notify-github-plugin": "^0.8.5",
-    "reg-suit": "^0.10.0"
+    "reg-publish-s3-plugin": "^0.9.0",
+    "reg-suit": "^0.10.0",
+    "storycap": "^2.3.5"
   }
 }

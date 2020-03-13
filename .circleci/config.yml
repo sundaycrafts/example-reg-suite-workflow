@@ -5,14 +5,16 @@ jobs:
   build-and-test:
     executor:
       name: node/default
+      tag: latest-browsers
     steps:
       - checkout
       - node/with-cache:
           steps:
             - run: yarn install
-            - run: yarn test
+            - run: yarn reg-suit run
 workflows:
     build-and-test:
       jobs:
-        - build-and-test
+        - build-and-test:
+            context: example-reg-suit-workflow
 

@@ -1,8 +1,8 @@
 {
   "core": {
     "workingDir": ".reg",
-    "actualDir": "directory_contains_actual_images",
-    "thresholdRate": 0.5,
+    "actualDir": "__screenshots__",
+    "thresholdRate": 0,
     "addIgnore": true,
     "ximgdiff": {
       "invocationType": "client"
@@ -11,7 +11,10 @@
   "plugins": {
     "reg-keygen-git-hash-plugin": true,
     "reg-notify-github-plugin": {
-      "clientId": "MzIxsjQxNTQx0U+tSMwtyEnVLUpN1y0uzSxJ1S3PL8pOy8kv1zeztDAwAyopLs1LSaxMLkpMKykGAA=="
+      "clientId": "BcEBCoAgDADAF8mGFNPnDFlDtCbLsH7fXdwIEdNOIC+fo0tw0XA/dUpY5u3otoBizoQJin9jmrKzSr3KDw=="
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "example-reg-suite-workflow"
     }
   }
 }
